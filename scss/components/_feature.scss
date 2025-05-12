@@ -1,6 +1,22 @@
 @use '../util' as u;
 
 .feature {
+  display: grid;
+  gap: u.rem(24);
+
+  @media (width >= u.em(1110)) {
+    gap: u.rem(30);
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+  }
+  &__picture {
+    @media (width >= u.em(1110)) {
+      grid-column: 1 / 3;
+    }
+  }
+
   &__image {
   }
   &__headline {
@@ -8,6 +24,10 @@
     font-weight: 800;
   }
   &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
   }
   &__button {
     display: inline-block;
@@ -18,5 +38,6 @@
     text-transform: uppercase;
     font-weight: 700;
     padding: u.rem(12) u.rem(32);
+    justify-self: start;
   }
 }

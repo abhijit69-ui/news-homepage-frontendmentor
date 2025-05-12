@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Vite App</title>
+    <title>News Homepage</title>
   </head>
   <body>
     <header class="header wrapper">
@@ -46,15 +46,15 @@
     <main>
       <article class="wrapper grid">
         <section class="feature">
-          <picture>
+          <picture class="feature__picture">
             <source
-              media="(min-width: 1024px)"
+              media="(min-width: 43.75em)"
               srcset="/assets/feature-desk.jpg"
               width="730"
               height="300"
             />
             <img
-              src="/assets/feature-mobile"
+              src="/assets/feature-mobile.jpg"
               alt="colored blocks"
               class="feature__image"
               srcset="/assets/feature-mobile.jpg"
@@ -62,13 +62,15 @@
               height="300"
             />
           </picture>
-          <h1 class="feature__headline">The Bright Future of Web 3.0</h1>
-          <p class="feature__description">
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <a class="feature__button" href="">Read More</a>
+          <h1 class="feature__headline">The Bright Future of Web 3.0?</h1>
+          <div class="feature__description">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a class="feature__button" href="">Read More</a>
+          </div>
         </section>
         <section class="new">
           <h2 class="new__title">New</h2>
@@ -139,7 +141,9 @@
             <h3 class="blog__headline">
               <a href="">The Growth of Gaming</a>
             </h3>
-            <p class="blog__description"></p>
+            <p class="blog__description">
+              How the pandemic has sparked fresh opportunities.
+            </p>
           </article>
         </section>
       </article>

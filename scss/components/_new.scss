@@ -3,6 +3,11 @@
 .new {
   background-color: var(--c-blue);
   padding: u.rem(24) u.rem(20);
+  @media (width >= u.em(1110)) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+
   &__title {
     color: var(--c-yellow);
     font-size: var(--f-l);
@@ -16,6 +21,7 @@
     }
   }
   &__headline {
+    display: inline-block;
     font-size: var(--f-s);
     font-weight: 800;
     margin-block-end: u.rem(8);
