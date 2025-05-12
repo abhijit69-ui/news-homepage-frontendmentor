@@ -11,7 +11,14 @@
     }
   }
 
-  &__open {
+  &__open[aria-expanded='true'] {
+    ~ .nav__content {
+      translate: 0;
+    }
+
+    ~ .nav__overlay {
+      opacity: 0.5;
+    }
   }
 
   &__content {
@@ -39,5 +46,6 @@
     inset: 0;
     opacity: 0;
     transition: opacity 300ms ease-in-out;
+    pointer-events: none;
   }
 }

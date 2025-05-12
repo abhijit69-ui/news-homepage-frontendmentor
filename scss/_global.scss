@@ -37,7 +37,6 @@ body {
   line-height: 1.7;
   font-size: var(--f-body);
   color: var(--c-gray);
-  padding-block-end: 50vh;
 }
 
 h1,
@@ -88,4 +87,7 @@ li {
     grid-template-rows: u.rem(300) auto auto;
     gap: u.rem(30);
   }
+}
+.noscroll {
+  overflow-y: hidden;
 }
