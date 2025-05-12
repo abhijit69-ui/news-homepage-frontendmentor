@@ -17,8 +17,6 @@
     }
   }
 
-  &__image {
-  }
   &__headline {
     font-size: var(--f-xl);
     font-weight: 800;
@@ -39,5 +37,9 @@
     font-weight: 700;
     padding: u.rem(12) u.rem(32);
     justify-self: start;
+
+    &:hover {
+      background-color: var(--c-blue);
+    }
   }
 }
