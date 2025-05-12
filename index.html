@@ -23,24 +23,52 @@
           height="40"
         />
       </a>
-      <nav>
-        <ul class="header__links">
-          <li>
-            <a class="header__link" href="">Home</a>
-          </li>
-          <li>
-            <a class="header__link" href="">New</a>
-          </li>
-          <li>
-            <a class="header__link" href="">Popular</a>
-          </li>
-          <li>
-            <a class="header__link" href="">Trending</a>
-          </li>
-          <li>
-            <a class="header__link" href="">Categories</a>
-          </li>
-        </ul>
+      <nav class="nav" aria-label="site">
+        <button
+          class="nav__open"
+          id="btnOpen"
+          aria-labelledby="nav-label"
+          aria-expanded="false"
+        >
+          <span id="nav-label" hidden>Navigation</span>
+          <svg
+            width="40"
+            height="17"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+            <path d="M0 0h40v3H0z" />
+          </svg>
+        </button>
+
+        <div class="nav__overlay" aria-hidden="true"></div>
+
+        <div class="nav__content">
+          <button id="btnClose" class="nav__close">
+            <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+              <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+              <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+            </svg>
+          </button>
+          <ul class="header__links">
+            <li>
+              <a class="header__link" href="">Home</a>
+            </li>
+            <li>
+              <a class="header__link" href="">New</a>
+            </li>
+            <li>
+              <a class="header__link" href="">Popular</a>
+            </li>
+            <li>
+              <a class="header__link" href="">Trending</a>
+            </li>
+            <li>
+              <a class="header__link" href="">Categories</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
